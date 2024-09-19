@@ -1,0 +1,125 @@
+import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:provider/provider.dart';
+import 'package:sizer/sizer.dart';
+import '../../controller/provider/resturantRegisterProvider/resturantRegisterProvider.dart';
+import '../../controller/services/authServices/mobileAuthServices.dart';
+import '../../utils/colors.dart';
+import '../../utils/testStyles.dart';
+
+class AccountScreen extends StatefulWidget {
+  const AccountScreen({super.key});
+
+  @override
+  State<AccountScreen> createState() => _AccountScreenState();
+}
+
+class _AccountScreenState extends State<AccountScreen> {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      context.read<ResturantProvider>().getResturantData();
+    });
+  }
+
+ List account = [
+    [FontAwesomeIcons.shop, 'Đơn hàng'],
+    [FontAwesomeIcons.locationPin, 'Địa chỉ'],
+    // [FontAwesomeIcons.heart, 'Yêu thích'],
+    // [FontAwesomeIcons.star, 'Nhận thưởng'],
+    [FontAwesomeIcons.wallet, 'Thanh toán qua thẻ'],
+    // [FontAwesomeIcons.gift, 'Quà tặng'],
+    // [FontAwesomeIcons.suitcase, 'Buisness preferences'],
+    [FontAwesomeIcons.person, 'Hỗ trợ'],
+    // [FontAwesomeIcons.tag, 'Khuyến mãi'],
+    // [FontAwesomeIcons.ticket, 'Uber Pass'],
+    [FontAwesomeIcons.suitcase, 'Vận chuyển'],
+    [FontAwesomeIcons.gear, 'Cài đặt'],
+    [FontAwesomeIcons.powerOff, 'Đăng xuất'],
+  ];
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+          body: ListView(
+        physics: const BouncingScrollPhysics(),
+        padding: EdgeInsets.symmetric(horizontal: 3.w, vertical: 2.h),
+        children: [
+          SizedBox(
+            height: 2.h,
+          ),
+          Consumer<ResturantProvider>(
+              builder: (context, resturantProvider, child) {
+            if (resturantProvider.resturantData == null) {
+              return Row(
+                children: [
+                  CircleAvatar(
+                    radius: 3.h,
+                    backgroundColor: black,
+                    child: CircleAvatar(
+                      radius: 3.h - 2,
+                      backgroundColor: white,
+                      child: FaIcon(
+                        FontAwesomeIcons.user,
+                        size: 3.h,
+                        color: grey,
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 10.w,
+                  ),
+                  Text(
+                    'Xin chào người dùng',
+                    style: AppTextStyles.body16,
+                  ),
+                ],
+              );
+            } else {
+              return Row(
+                children: [
+                  Text(
+                    resturantProvider.resturantData!.restaurantName!,
+                    style: AppTextStyles.heading26Bold,
+                  ),
+                ],
+              );
+            }
+          }),
+          SizedBox(
+            height: 4.h,
+          ),
+          ListView.builder(
+              itemCount: account.length,
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              itemBuilder: (context, index) {
+                return ListTile(
+                  onTap: () {
+                    if (index == (account.length - 1)) {
+                      MobileAuthServices.signOut(context);
+                      ScaffoldMessenger.of(context).showSnackBar(
+    SnackBar(
+      content: Text('Đăng xuất thành công!'),
+    ),
+  );
+                    }
+                  
+                  },
+                  leading: FaIcon(
+                    account[index][0],
+                    size: 2.h,
+                    color: black,
+                  ),
+                  title: Text(
+                    account[index][1],
+                    style: AppTextStyles.body14,
+                  ),
+                );
+              })
+        ],
+      )),
+    );
+  }
+}

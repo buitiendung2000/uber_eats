@@ -1,0 +1,203 @@
+{
+  "project_info": {
+    "project_number": "960752389393",
+    "firebase_url": "https://uber-eats-bfd38-default-rtdb.firebaseio.com",
+    "project_id": "uber-eats-bfd38",
+    "storage_bucket": "uber-eats-bfd38.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960752389393:android:66fcca0feeb8384680d0b0",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960752389393-d7g2auc69uaf91m6rdm9bs3k7gkfc0ip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSdL0Ha9q1wuaacQ32_c1B_UMs3BIPXrg"
+        },
+        {
+          "current_key": "AIzaSyDsMkQsYmiWmHPI1mb5OH7f3jmauQFu2A8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960752389393-d7g2auc69uaf91m6rdm9bs3k7gkfc0ip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960752389393:android:c78b3ebb52677daf80d0b0",
+        "android_client_info": {
+          "package_name": "com.example.uber_eats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960752389393-d7g2auc69uaf91m6rdm9bs3k7gkfc0ip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSdL0Ha9q1wuaacQ32_c1B_UMs3BIPXrg"
+        },
+        {
+          "current_key": "AIzaSyDsMkQsYmiWmHPI1mb5OH7f3jmauQFu2A8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960752389393-d7g2auc69uaf91m6rdm9bs3k7gkfc0ip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960752389393:android:084e9161b4c506b280d0b0",
+        "android_client_info": {
+          "package_name": "com.example.uber_eats_driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960752389393-d7g2auc69uaf91m6rdm9bs3k7gkfc0ip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSdL0Ha9q1wuaacQ32_c1B_UMs3BIPXrg"
+        },
+        {
+          "current_key": "AIzaSyDsMkQsYmiWmHPI1mb5OH7f3jmauQFu2A8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960752389393-d7g2auc69uaf91m6rdm9bs3k7gkfc0ip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960752389393:android:5eabbfd45232331180d0b0",
+        "android_client_info": {
+          "package_name": "com.example.uber_eats_restaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960752389393-d7g2auc69uaf91m6rdm9bs3k7gkfc0ip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSdL0Ha9q1wuaacQ32_c1B_UMs3BIPXrg"
+        },
+        {
+          "current_key": "AIzaSyDsMkQsYmiWmHPI1mb5OH7f3jmauQFu2A8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960752389393-d7g2auc69uaf91m6rdm9bs3k7gkfc0ip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960752389393:android:ef2f8802f61f14fa80d0b0",
+        "android_client_info": {
+          "package_name": "com.example.ubereatsrestaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960752389393-d7g2auc69uaf91m6rdm9bs3k7gkfc0ip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSdL0Ha9q1wuaacQ32_c1B_UMs3BIPXrg"
+        },
+        {
+          "current_key": "AIzaSyDsMkQsYmiWmHPI1mb5OH7f3jmauQFu2A8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960752389393-d7g2auc69uaf91m6rdm9bs3k7gkfc0ip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960752389393:android:ac2b1fe3ad80548280d0b0",
+        "android_client_info": {
+          "package_name": "com.example.ubereatsuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960752389393-d7g2auc69uaf91m6rdm9bs3k7gkfc0ip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSdL0Ha9q1wuaacQ32_c1B_UMs3BIPXrg"
+        },
+        {
+          "current_key": "AIzaSyDsMkQsYmiWmHPI1mb5OH7f3jmauQFu2A8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960752389393-d7g2auc69uaf91m6rdm9bs3k7gkfc0ip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
